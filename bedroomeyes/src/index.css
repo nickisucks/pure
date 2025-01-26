@@ -1,0 +1,467 @@
+.syne-mono-regular {
+  font-family: "Syne Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+  .rubik-iso-regular {
+  font-family: "Rubik Iso", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ @font-face {
+    font-family: "ebola"; 
+    src: url("ebola.TTF") format("truetype");
+}     
+.background-image {
+  background-image: url('"C:\Users\mayan\Pictures\spiral.gif"'); 
+  background-size: cover;
+  background-position: center;
+}
+      
+body {
+  background: url(https://44.media.tumblr.com/d2bb17423db7e72aba8e736e81994ca6/tumblr_pmo6eu78NY1xp58lzo3_640.gif) no-repeat;
+  background-size: cover;  /* Ensures the image covers the entire screen */
+  font-family: 'pixelify sans', 'courier new', 'ebola', sans-serif, lato, calibri, Verdana;
+  font-size: 16px;
+  color: #5f5b5c;
+  letter-spacing: 1px;
+
+      margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Ensures space between the elements */
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh;
+}
+
+  body::after {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+  }
+  body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
+  body {
+    animation: textShadow 1.6s infinite;
+  }
+        
+a:link, a:visited, a:active { 
+color:#555;text-decoration:none;}
+      
+a:hover {
+color:#999;}
+
+b {color:#766f6f;font-family: 'Rubik Iso', serif;}
+i {color:#783858;font-style:normal;}
+
+ :root{
+--pfpimg: url("https://i.pinimg.com/736x/b9/45/68/b945684f01124d428ae0d189c9ef26e2.jpg")
+}     
+      
+::-webkit-scrollbar-thumb {
+background-color: #000;  
+border-radius: 5px;
+border:0px solid #6ECA7A;}
+::-webkit-scrollbar {
+width: 5px; height: 0px; 
+background: transparent;}      
+
+     #footer {
+  position: absolute;    /* Position it absolutely relative to the document */
+  top: 2980px;           /* Set it 1170px down from the top */
+  left: 0;
+  width: 100%;
+  height: 105px;
+  text-align: center;
+  font-size: 16px;
+  background-color: transparent;
+}
+    .banner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 15px;
+      width: 100%;
+      background-color: #783858;
+      color: black;
+      font: 'syne mono', serif;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 2000;
+      overflow: hidden;
+    }
+
+
+      #header {position:absolute;
+        top:30px;
+        left:97px;
+        width:250px;
+        height:40px;
+        background:#783858;
+        border-top-right-radius:5px;
+        border-top-left-radius:5px;
+        text-align:center;
+        color:#fff;
+        padding:4px;
+        font:30px 'pixelify sans', monospace;
+        border:3px ridge #691941;
+        line-height:40px;}
+
+      #sidebar2 {
+      position:absolute;
+      top:90px;
+      left:893px;
+      width:220px;
+      height:405px;
+      background:#1d1d1e;
+      font: 14px 'syne mono', serif;
+      color: black;
+      padding:5px;
+      border: 3px ridge #783858;
+      border-bottom-right-radius:5px;
+      border-top-right-radius:5px;
+}
+      
+      
+      #sidebar3 {
+      position:absolute;
+      top:511px;
+      left:893px;
+      width:220px;
+      height:438px;
+      background:#1d1d1e;
+      font: 18px normal, monospace;
+      color: black;
+      padding:5px;
+      border: 3px ridge #783858;
+      border-bottom-right-radius:5px;
+      border-top-right-radius:5px;
+}
+      
+.container {
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: flex-start;  /* Align items at the top */
+    width: 100%;
+    height: calc(100vh - 20px); /* Adjust height to accommodate the 90px top space */
+    padding-top: 20px; /* Space the content down by 90px */
+}
+#sidebar {
+    width: 175px;
+    height: 540px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #1d1d1e;
+    padding: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 3px ridge #783858;
+    margin-right: 5px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically inside the sidebar */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Start from the top */
+    padding-top: 10px; /* Add some padding from the top */
+    box-sizing: border-box; /* Ensure padding doesn't mess with the layout */
+}
+.sidebars-container {
+  display: flex;          /* Use flex to stack elements */
+  flex-direction: column; /* Stack sidebars vertically */
+  align-items: flex-start; /* Align items to the left */
+}
+#sidebarx {
+    width: 175px;
+    height: 125px;
+    margin-top: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #1d1d1e;
+    padding: 4px;
+    font: 'pixelify sans';
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 3px ridge #783858;
+    margin-right: 5px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically inside the sidebar */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Start from the top */
+    padding-top: 10px; /* Add some padding from the top */
+    box-sizing: border-box; /* Ensure padding doesn't mess with the layout */
+}
+  
+
+      
+.sideimg {width:170px;border-top-left-radius:15px;border-top-right-radius:15px;}
+.sidetitle {background:#783858;font-family:'ebola';
+font-size: 20px;
+color:#0e0e0e;border-radius:5px;
+text-align:center;border-bottom:4px ridge #691941;margin-bottom:4px;}
+
+
+#content {
+    max-width: 700px;
+    max-height: 660px;
+    background: #1d1d1e;
+    padding: 4px;
+    border: 3px ridge #783858;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex-grow: 1; /* Allow this div to grow vertically as needed */
+    overflow: auto;
+    margin-right: 5px;
+}
+
+#content2 {
+    width: 435px;
+    height: 660px;
+    overflow: auto;
+    background: #1d1d1e;
+    padding: 4px;
+    border: 3px ridge #783858;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+      
+.contenttitle {background:#783858;font-family: 'ebola';
+font-size: 26px;
+color:#0e0e0e;
+border-radius:5px;text-align:center;border-bottom:4px ridge #691941;margin-bottom:4px;}
+
+      
+#menu {
+    width: 90%; /* Ensure the menu takes the full width of the sidebar */
+    background: transparent;
+    margin-bottom: 10px; /* Space between the menu and other elements */
+    top: 30px;
+}
+
+#menu a {
+    display: block; /* Block display to take up the full width */
+    background: #783858;
+    text-decoration: none;
+    padding: 5px; /* Padding inside the menu link */
+    width: 100%; /* Fill the sidebar's width */
+    line-height: 20px; /* Adjust line-height for better vertical alignment */
+    font: normal 12px monospace;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px ridge #783858;
+    color: #fff;
+}
+      
+#menu a:hover {text-shadow: 0 0 7px #ff0051;color: #da095f; text-decoration: none;transform: scale(1.05);
+}
+#menu a {
+    transition: text-shadow 0.3s ease, 
+    transform 0.3s ease;} 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.alltheposts {
+    width: 435px;
+    height: 90%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 5px 1px;
+}
+
+.wrapper {
+    width: 40rem;
+    height: 30rem;
+    background: linear-gradient(to right, #1d1d1e, #813c5e);
+    display: flex;
+    padding: 10px;
+    box-shadow: inset #ff92c3 0 0 4px, #1d1d1e 0 0 0px 2px, #ffc8e2 0 0 0 4px;
+    border-radius: 2px;
+}
+
+.left {
+    height: 100%;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right {
+    height: 100%;
+    width: 421px;
+}
+
+.username {
+    font-size: 1em;
+    color: white;
+    text-shadow: 0 0 2px #ff2f9c;
+    font-family: 'normal', monospace;
+}
+
+.welcome {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1d1d1e;
+    gap: 4px;
+    box-shadow: lightgrey 0 0 2px 0px;
+}
+
+.welcome textarea {
+    height: 2.3rem;
+    width: 22.3rem;
+    resize: none;
+    font-size: 1.2em;
+    border: #783858 1px solid;
+    outline: none;
+    font-family: Arial;
+}
+.postwrapper {
+    width: 410px; /* Fixed width of the wrapper */
+    height: fit-content;
+    background-color: #1d1d1e;
+    box-shadow: #ad1251 0 0 2px;
+    color: #121112;
+    padding: 10px;
+    position: relative; 
+    box-shadow: inset #ff92c3 0 0 4px, 121112 0 0 0px 2px;
+border-radius: 2px;
+}
+.themeswitch{
+   display: block; /* Block display to take up the full width */
+    background: #783858;
+    text-decoration: none;
+    padding: 5px; /* Padding inside the menu link */
+    width: 110%; /* Fill the sidebar's width */
+    line-height: 20px; /* Adjust line-height for better vertical alignment */
+    font: normal 12px monospace;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px ridge #783858;
+    color: #fff;
+    transition: text-shadow 0.3s ease, 
+    transform 0.3s ease;}
+     
+     .themeswitch:hover { text-shadow: 0 0 7px #ff0051;color: #da095f; text-decoration: none;transform: scale(1.03);}
+
+.pfpside {
+    height: 3rem; /* Height of profile image */
+    width: 3rem;  /* Width of profile image */
+    margin-right: 10px; /* Space between profile picture and post content */
+    float: left;  /* Align to the left */
+    background-image: var(--pfpimg);  /* Ensure the profile picture URL is set correctly */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;  /* Make it a perfect circle */
+}
+
+.postside {
+    width: calc(100% - 3rem - 10px); /* Take up the remaining width (subtract profile width and margin) */
+    height: auto;
+    margin-left: 1px;  /* 1px gap between profile image and post content */
+    padding-top: 5px; /* Space between title and content */
+    color: #766f6f;
+}
+
+.postside h3 {
+    margin: 0;  /* Remove default margin */
+    font-size: 1.1em;
+    color: #766f6f;
+    position: relative;
+    height: auto;
+}
+
+.postside p {
+    margin-top: 0.5rem; /* Space between title and paragraph */
+    font-size: 1em;
+    color: #766f6f;
+}
+
+.bottomtext {
+    width: 100%; /* Make sure it takes up the full width of the postwrapper */
+    height: 1.5rem; /* Set height of bottom text container */
+    font-size: 1.25em; /* Font size for the text */
+    color: #732846;
+    background: linear-gradient(to right, #1d1d1e, #813c5e); /* Gradient background */
+    padding-left: 5px; /* Left padding */
+    box-sizing: border-box; /* Ensures padding does not affect width/height */
+    position: absolute; /* Position it at the bottom of the postwrapper */
+    bottom: 0; /* Align it to the bottom */
+    left: 0; /* Ensure it stays aligned with the left edge of the container */
+    display: flex; /* Flexbox for centering the text inside */
+    align-items: center; /* Vertically center text */
+}
+
+
+
+
+    .Marquee-box {
+     position: relative;
+     display: inline-block;
+     width: 218px;
+     height: 110;
+  }
+  .MusicMarquee {
+     text-align: center;
+     font-weight: bold;
+     width: 100%;
+     height: 100%;
+     font-size: 25px;
+     border: 4px double #783858;
+     color: #FFFFFF;
+     font-family: Arial, Helvetica, sans-serif;
+     vertical-align: middle;
+     -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+     background-color: #eee;
+
+  }
+  .MusicMarquee div {
+     display: inline-block;
+     vertical-align: middle;
+  }
+  .MusicMarquee a, .MusicMarquee img {
+     display: inline-block;
+     text-decoration: underline;
+     color: #FFFFFF;
+     vertical-align: middle;
+  }
