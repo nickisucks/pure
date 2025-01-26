@@ -1,0 +1,353 @@
+a {
+  color: #b27982;
+  text-decoration: none; 
+}
+
+/* Color for visited links */
+a:visited {
+  color: #b27982;
+}
+
+a:hover {
+  color: #7d3131;
+}
+.syne-mono-regular {
+  font-family: "Syne Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+  .rubik-iso-regular {
+  font-family: "Rubik Iso", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body::after {
+content: " ";
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: rgba(18, 16, 16, 0.1);
+opacity: 0;
+z-index: 2000;
+pointer-events: none;
+animation: flicker 0.15s infinite;
+}
+body::before {
+content: " ";
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+z-index: 2000;
+background-size: 100% 2px, 3px 100%;
+pointer-events: none;
+}
+body {
+animation: textShadow 1.6s infinite;
+}
+
+
+body {
+
+
+background: url(https://64.media.tumblr.com/be79431210b726868bb27610ff6c821e/00b472710ab51daf-30/s540x810/25b9f9b132d92a64d9814ae7b2255395bbd493ea.gif) no-repeat ; 
+background-size: cover;  /* Ensures the image covers the entire screen */
+font-family: 'pixelify sans', 'courier new', 'ebola', sans-serif, lato, calibri, Verdana;
+font-size: 16px;
+color: #423b46;
+letter-spacing: 1px;
+overflow: hidden;
+}
+
+
+b {color:#423b46;font-family: 'Rubik Iso', serif;}
+i {color:#423b46;font-style:normal;}
+
+
+
+::-webkit-scrollbar-thumb {
+background-color: #000;  
+border-radius: 5px;
+border:0px solid #6ECA7A;}
+::-webkit-scrollbar {
+width: 5px; height: 0px; 
+background: transparent;}      
+
+#menu a:hover {text-shadow: 0 0 7px #ff0051;color: #7d3131; text-decoration: none;transform: scale(1.05);
+}
+#menu a {
+transition: text-shadow 0.3s ease, 
+transform 0.3s ease;}
+
+
+
+#footer {
+position: absolute;    /* Position it absolutely relative to the document */
+top: 980px;           /* Set it 1170px down from the top */
+left: 0;
+width: 100%;
+height: 105px;
+text-align: center;
+font-size: 16px;
+background-color: transparent;
+}
+.banner {
+position: fixed;
+top: 0;
+left: 0;
+height: 15px;
+width: 100%;
+background-color: #783858;
+color: black;
+font: 'syne mono', serif;
+padding: 10px 0;
+text-align: center;
+z-index: 2000;
+overflow: hidden;
+}
+
+
+#header {position:absolute;
+top:30px;
+left:293px;
+width:250px;
+height:40px;
+background:#783858;
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+text-align:center;
+color:#fff;
+padding:4px;
+font:30px 'pixelify sans', monospace;
+border:3px ridge #353535;
+line-height:40px;}
+
+#sidebar2 {
+  position:absolute;
+  top:20px;
+  right:5px;
+  width: 350px;
+  height: 47px;
+  background:#473135;
+  padding:4px;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  border: 3px ridge #1e1e1f}
+
+#sidebar3 {
+position:absolute;
+top:258px;
+left:893px;
+width:320px;
+height:420px;
+background:#252525;
+font: 18px 'syne mono', monospace;
+color: black;
+padding:5px;
+border: 3px ridge #1e1e1f;
+border-bottom-right-radius:5px;
+border-top-right-radius:5px;
+overflow: scroll;
+}
+
+
+#sidebar {
+position:absolute;
+top:20px;
+left:5px;
+width: 350px;
+height: 47px;
+background:#473135;
+padding:4px;
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+border: 3px ridge #1e1e1f}
+#sidebarx {
+position:absolute;
+top:436px;
+left:293px;
+width:170px;
+height: 245px;
+overflow: scroll;
+background:#252525;
+font-family: 'pixelify sans', monospace;
+color: #5f5b5c;
+padding:4px;
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+border: 3px ridge #1e1e1f}
+
+
+.sideimg {width:170px;border-top-left-radius:15px;border-top-right-radius:15px;}
+.sidetitle {
+background: #783858;
+font-family: 'Ebola';
+font-size: 20px;  
+color: #353535;
+border-radius: 5px;
+text-align: center;
+border-bottom: 4px ridge #353535;
+margin-bottom: 4px;
+}
+
+
+#header {
+  position:absolute;
+  top:20px;
+  left: 25%;
+  height: 47px;
+  width:755px;
+  background:#473135;
+  font-family: 'ebola';
+  padding:4px;
+  border: 3px ridge #1e1e1f;
+  overflow: scroll;
+  }
+
+#contentmain {
+position:absolute;
+top:85px;
+right: 34%;
+width: 500px;
+height: 600px;
+background:#473135;
+font-family: 'ebola';
+padding:4px;
+border: 3px ridge #1e1e1f;
+overflow: scroll;
+
+}
+
+.contenttitle {background:#353535;
+font-family: 'Ebola';
+font-size: 26px;
+color:#0e0e0e;
+border-radius:5px;
+text-align:center;
+font-family: 'syne mono';
+border-bottom:4px ridge #7d3131;
+margin-bottom:4px;}
+
+
+
+#menu {
+  display: flex; /* Use flexbox for horizontal layout */
+  background: transparent;
+  margin-top: 5px;
+  margin-left: 1px;
+}
+
+#menu a {
+  display: block; 
+  background: #353535;
+  text-decoration: none;
+  padding: 5px;
+  width: 30%; /* Adjust width to account for spacing */
+  line-height: 20px;
+  font: normal 12px monospace;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  border-radius: 5px;
+  border-bottom:4px ridge #7d3131;
+  color: #fff;
+  margin-right: 110px; /* Add 5px right margin to each link */
+}
+
+#menu a:last-child {
+  margin-right: 0; /* Remove margin from the last link */
+}
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.rounded-top-div {
+width: 214px; /* Set width to 218px */
+height: 30px; /* Set height to 65px */
+background: linear-gradient(to right, #6a4069, #353535); /* Gradient from #e32f77 to #7e2d4e */
+border-radius: 15px 15px 0 0; /* Rounded top corners */
+border-top: 2px solid black; 
+border-right: 2px solid black;
+border-left: 2px solid black;
+display: block; 
+font: 18px'syne mono', monospace;
+}
+.Marquee-box {
+position: relative;
+display: inline-block;
+width: 218px;
+height: 110;
+}
+.MusicMarquee {
+text-align: center;
+font-weight: bold;
+width: 100%;
+height: 100%;
+font-size: 25px;
+border: 4px double #353535;
+color: #353535;
+font-family: Arial, Helvetica, sans-serif;
+vertical-align: middle;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+   box-sizing: border-box;
+background-color: #5a5a5a;
+
+}
+.MusicMarquee div {
+display: inline-block;
+vertical-align: middle;
+}
+.MusicMarquee a, .MusicMarquee img {
+display: inline-block;
+text-decoration: underline;
+color: #FFFFFF;
+vertical-align: middle;
+}
+/* Initial image styles */
+.tilt-image {
+transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+/* Tilt effect on hover */
+.tilt-image:hover {
+transform: rotate(5deg); /* Slightly rotate the image (you can adjust the degree) */
+}
+.themeswitch{
+display: block; /* Block display to take up the full width */
+background: #353535;
+text-decoration: none;
+padding: 5px; /* Padding inside the menu link */
+width: 100%; /* Fill the sidebar's width */
+line-height: 20px; /* Adjust line-height for better vertical alignment */
+font: normal 12px monospace;
+text-transform: uppercase;
+letter-spacing: 3px;
+text-align: center;
+border-radius: 5px;
+border: 3px ridge #783858;
+color: #fff;
+transition: text-shadow 0.3s ease, 
+transform 0.3s ease;}
+
+/* Default styles for desktop and tablet */
+body {
+font-size: 16px;
+background-color: white;
+}
+
+header {
+font-size: 24px;
+padding: 20px;
+}
+
+
