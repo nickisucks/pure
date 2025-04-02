@@ -7,7 +7,6 @@ a {
 a:visited {
   color: #b27982;
 }
-
 a:hover {
   color: #7d3131;
 }
@@ -125,6 +124,7 @@ border-top-left-radius:5px;
 text-align:center;
 color:#fff;
 padding:4px;
+font-family: "Syne Mono", serif;
 font:30px 'pixelify sans', monospace;
 border:3px ridge #353535;
 line-height:40px;}
