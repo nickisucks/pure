@@ -6,10 +6,12 @@ export default defineConfig({
     react({
       babel: {
         plugins: [
-          ['@babel/plugin-proposal-decorators', { legacy: true }], 
-          ['@babel/plugin-transform-runtime', { useESModules: true }] 
+          ['@babel/plugin-transform-runtime', { useESModules: true }],
         ],
       },
     }),
   ],
+  build: {
+    outDir: 'dist', // Explicitly set outDir to 'dist'
+  },
 });
